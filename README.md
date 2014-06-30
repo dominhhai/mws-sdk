@@ -15,22 +15,16 @@ Usage
 Super simple example
 --------------------
 
-I will be creating some sample projects illustrating how to take advantage
-of complex/enum params and other more useful features of this library, but
-the most basic usage I could come up with goes something like:
+This example submits a product upload (using the XML format, known as
+feed type _POST_PRODUCT_DATA):
 
 ```javascript
 var mws = require('mws'),
     client = new AmazonMwsClient('accessKeyId', 'secretAccessKey', 'merchantId', {});
 
-// Get the service status of Sellers API endpoint and print it
-client.invoke(new mws.sellers.requests.GetServiceStatus(), console.log);
-
-var listOrders = new mws.orders.requests.ListOrders();
-listOrders.set('MarketplaceId', 'marketplaceId')
-          .set('CreatedAfter', new Date(2,14,2012));
-client.invoke(listOrders, function(result) {
-  console.log(result);
-  // Do something fun with the results...
-});
+var sf = new mwsFeedsAPI.requests.SubmitFeed();
+sf.params.FeedContents.value = "XML-FORMAT PRODUCT DESCRIPTIONS";
+sf.params.FeedType.value = "_POST_PRODUCT_DATA_";
+client.invoke(sf, console.log);
 ```
+
