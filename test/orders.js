@@ -16,10 +16,10 @@ describe('Orders', function() {
     listOrders.params.CreatedAfter.value = "2015-01-01";
     client.invoke(listOrders, function (resp) {
       var orders = resp.ListOrdersResponse.ListOrdersResult[0].Orders[0].Order
+      console.log(orders.length);
       done();
     });
   });
-  
   
   it('get single order', function(done){
     var getOrder = MWS.Orders.requests.GetOrder();
@@ -27,10 +27,10 @@ describe('Orders', function() {
     // 000-0000000-0000000
     getOrder.params.AmazonOrderId.value = '112-8444240-5137016';
     client.invoke(getOrder, function (resp) {
-      var order = GetOrderResponse.GetOrderResult[0].Orders[0].Order[0];
+      var order = resp.GetOrderResponse.GetOrderResult[0].Orders[0].Order;
       console.log(JSON.stringify(order));
       done();
     });
   });
-  
+
 });
