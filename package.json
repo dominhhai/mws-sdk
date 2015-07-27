@@ -1,20 +1,33 @@
 {
-  "name" : "mws-js-2014",
-  "description" : "Amazon Marketplace Web Services client with support for all api calls (completion of work by robbies@eibbors.net).",
-  "keywords" : ["mws", "amazon", "marketplace"],
-  "homepage" : "_",
-  "version" : "0.9.5",
-  "author" : "Eibbor Srenduas <robbies@eibbors.net> (http://eibbors.net)",
-  "contributors" : [ "David F. Sklar <dfsklar@gmail.com>" ],
-  "main" : "./lib/mws",
-  "directories" : {
+  "name": "mws-js-2014",
+  "description": "Amazon Marketplace Web Services client with support for all api calls (completion of work by robbies@eibbors.net).",
+  "keywords": [
+    "mws",
+    "amazon",
+    "marketplace"
+  ],
+  "homepage": "_",
+  "version": "0.9.5",
+  "author": "Eibbor Srenduas <robbies@eibbors.net> (http://eibbors.net)",
+  "contributors": [
+    "David F. Sklar <dfsklar@gmail.com>"
+  ],
+  "main": "./lib/mws",
+  "directories": {
     "lib": "./lib"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/dfsklar/mws-js.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dfsklar/mws-js.git"
   },
-  "dependencies" : {
-    "xml2js" : ">=0.1.13"
+  "dependencies": {
+    "xml2js": ">=0.1.13"
+  },
+  "devDependencies": {
+    "assert": "^1.3.0",
+    "mocha": "^2.2.5"
+  },
+  "scripts": {
+    "test": "mocha -t 5000"
   }
 }
