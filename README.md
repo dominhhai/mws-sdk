@@ -7,13 +7,19 @@ Originally forked from [dfsklar/mws-js](https://github.com/dfsklar/mws-js). This
 Examples
 --------------------
 
+
+Initiation
+
 ```javascript
-var mwsOrderAPI = require('./lib/orders.js');
+var MWS = require('mws-sdk'),
+    client = new MWS.Client('accessKeyId', 'secretAccessKey', 'merchantId', {}),
+    marketPlaceId = "ATVPDKIKX0DER";
+```
 
-var marketplaceId = "ATVPDKIKX0DER";
 
-var sf = new mwsOrderAPI.requests.ListOrders({"marketplaceId": marketplaceId});
-sf.params.MarketplaceId.value = marketplaceId;
+```javascript
+var sf = new MWS.Orders.requests.ListOrders({"marketPlaceId": marketPlaceId});
+sf.params.MarketplaceId.value = marketPlaceId;
 sf.params.CreatedAfter.value = "2014-07-13";
 client.invoke(sf, function(RESULT){
   console.log("--------");
@@ -23,11 +29,9 @@ client.invoke(sf, function(RESULT){
 ```
 
 ```javascript
-var mwsOrderAPI = require('./lib/orders.js');
 
-var marketplaceId = "ATVPDKIKX0DER";
 
-var sf = new mwsOrderAPI.requests.ListOrderItems();
+var sf = new MWS.Orders.requests.ListOrderItems();
 sf.params.AmazonOrderId.value = "111-1715221-5800265";
 client.invoke(sf, function(RESULT){
   console.log("--------");
