@@ -1,6 +1,6 @@
 {
-  "name": "mws-sdk",
-  "description": "Amazon Marketplace Web Services client with support for all api calls.",
+  "name": "mws-sdk-promises",
+  "description": "Amazon Marketplace Web Services client with support for all api calls, using ES6 Promises.",
   "keywords": [
     "mws",
     "amazon",
@@ -8,12 +8,26 @@
     "fba",
     "sellers"
   ],
-  "homepage": "_",
-  "version": "0.9.7",
-  "author": "Eibbor Srenduas <robbies@eibbors.net> (http://eibbors.net)",
+  "homepage": "http://_",
+  "version": "0.9.8",
+  "author": {
+    "name": "Eibbor Srenduas",
+    "email": "robbies@eibbors.net",
+    "url": "http://eibbors.net"
+  },
   "contributors": [
-    "Adrian Sanchezdelc <adrian@ticadia.com>",
-    "David F. Sklar <dfsklar@gmail.com>"
+    {
+      "name": "Adrian Sanchezdelc",
+      "email": "adrian@ticadia.com"
+    },
+    {
+      "name": "David F. Sklar",
+      "email": "dfsklar@gmail.com"
+    },
+    {
+      "name": "Alex I. Vedmedenko",
+      "email": "vedmalex@gmail.com"
+    }
   ],
   "main": "./lib/mws",
   "directories": {
@@ -21,10 +35,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ticadia/mws-sdk.git"
+    "url": "https://github.com/vedmalex/mws-sdk.git"
   },
   "dependencies": {
-    "xml2js": "^0.4.9"
+    "xml2js": "^0.4.12",
+    "underscore": "^1.8.3",
+    "request": "^2.60.0"
   },
   "devDependencies": {
     "assert": "^1.3.0",
@@ -32,5 +48,8 @@
   },
   "scripts": {
     "test": "mocha -t 5000"
+  },
+  "bugs": {
+    "url": "https://github.com/ticadia/mws-sdk/issues"
   }
 }
