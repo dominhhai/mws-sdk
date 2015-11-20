@@ -28,7 +28,7 @@ Initialize
 ```javascript
 var MWS = require('mws-sdk-promises'),
     client = new MWS.Client('accessKeyId', 'secretAccessKey', 'merchantId', {}),
-    marketPlaceId = "ATVPDKIKX0DER";
+    MarketplaceId = "ATVPDKIKX0DER";
 ```
 
 now you can use it 
@@ -64,7 +64,7 @@ Use it.
 ```javascript
 var date = new Date();
 getListOrders(client, {
-  marketPlaceId: "ATVPDKIKX0DER",
+  MarketplaceId: MarketplaceId,
   MaxResultsPerPage: 10,
   CreatedAfter: new Date(1,1,2015)
   CreatedBefore: new Date(1,2,2015),
