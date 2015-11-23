@@ -1,6 +1,10 @@
 Changes:
 =======
 
+2015/11/24 ver. 0.9.14
+----------------------
+merged PR #4 and #5, proposed by [Dave Stacey](https://github.com/davestacey).
+
 2015/11/22 ver. 0.9.13
 ---------------------
 * merged PR #3:
