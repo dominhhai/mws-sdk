@@ -34,7 +34,6 @@ var MWS = require('mws-sdk-promises'),
 now you can use it 
 
 ```javascript
-
 function getListOrders(client, args) {
   var req = MWS.Orders.requests.ListOrders();
   req.set('CreatedAfter', args.CreatedAfter);
@@ -66,12 +65,15 @@ var date = new Date();
 getListOrders(client, {
   MarketplaceId: MarketplaceId,
   MaxResultsPerPage: 10,
-  CreatedAfter: new Date(1,1,2015)
-  CreatedBefore: new Date(1,2,2015),
+  CreatedAfter: new Date(2015, 1, 1),
+  CreatedBefore: new Date(2015, 1, 31)
+})
+.catch(function(error) {
+  console.error(error);
 })
 .then(function(RESULT){
-    console.log("--------");
-    console.log(JSON.stringify(RESULT));
-    console.log("--------");
-  });
+  console.log("--------");
+  console.log(JSON.stringify(RESULT));
+  console.log("--------");
+});
 ```
