@@ -1,6 +1,10 @@
 Changes:
 =======
 
+2016/04/18 ver. 0.9.16
+----------------------
+merged PR #9 by [Jelhan](https://github.com/jelhan)
+
 2016/01/28 ver. 0.9.15
 ----------------------
 merged PR #8 by [Steve Pack](https://github.com/stevenpack)
