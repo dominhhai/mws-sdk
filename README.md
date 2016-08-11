@@ -89,6 +89,7 @@ Tests
   npm test
   ```
 2. To see more logs while running tests, choose from:
+
   ```
   NODE_DEBUG=request npm test
   NODE_ENV=development npm test
