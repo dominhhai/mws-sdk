@@ -77,3 +77,20 @@ getListOrders(client, {
   console.log("--------");
 });
 ```
+
+Tests
+-----
+
+1. Fill in the values for `env.sh` and run tests:
+
+  ```
+  cd cloneOfThisProject
+  . ./env.sh
+  npm test
+  ```
+2. To see more logs while running tests, choose from:
+  ```
+  NODE_DEBUG=request npm test
+  NODE_ENV=development npm test
+  NODE_ENV=development NODE_DEBUG=request npm test
+  ```
