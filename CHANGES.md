@@ -1,5 +1,8 @@
 Changes:
 =======
+2016/08/15 ver. 0.9.17
+----------------------
+merged PR #10 by [Pulkit Singhal](https://github.com/pulkitsinghal)
 
 2016/04/18 ver. 0.9.16
 ----------------------
