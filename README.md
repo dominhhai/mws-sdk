@@ -27,7 +27,15 @@ Initialize
 
 ```javascript
 var MWS = require('mws-sdk-promises'),
-    client = new MWS.Client('accessKeyId', 'secretAccessKey', 'merchantId', {}),
+    client = new MWS.Client(
+      'accessKeyId',
+      'secretAccessKey',
+      'merchantId',
+      {
+        // Optional Auth Token when using delegated Developer access.
+        authToken: 'amzn.mws...'
+      }
+    ),
     MarketplaceId = "ATVPDKIKX0DER";
 ```
 
