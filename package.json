@@ -9,22 +9,26 @@
     "sellers"
   ],
   "homepage": "http://_",
-  "version": "0.9.17",
+  "version": "0.9.18",
   "author": {
     "name": "Eibbor Srenduas",
     "email": "robbies@eibbors.net",
     "url": "http://eibbors.net"
   },
-  "contributors": [{
-    "name": "Adrian Sanchezdelc",
-    "email": "adrian@ticadia.com"
-  }, {
-    "name": "David F. Sklar",
-    "email": "dfsklar@gmail.com"
-  }, {
-    "name": "Alex I. Vedmedenko",
-    "email": "vedmalex@gmail.com"
-  }],
+  "contributors": [
+    {
+      "name": "Adrian Sanchezdelc",
+      "email": "adrian@ticadia.com"
+    },
+    {
+      "name": "David F. Sklar",
+      "email": "dfsklar@gmail.com"
+    },
+    {
+      "name": "Alex I. Vedmedenko",
+      "email": "vedmalex@gmail.com"
+    }
+  ],
   "main": "./lib/mws",
   "directories": {
     "lib": "./lib"

@@ -1,5 +1,10 @@
 Changes:
 =======
+
+2017/10/13 ver. 0.9.18
+----------------------
+merged PR #15 by [JoeMcGuire](https://github.com/JoeMcGuire)
+
 2016/08/15 ver. 0.9.17
 ----------------------
 merged PR #10 by [Pulkit Singhal](https://github.com/pulkitsinghal)
