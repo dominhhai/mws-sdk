@@ -9,7 +9,7 @@
     "sellers"
   ],
   "homepage": "http://_",
-  "version": "0.9.19",
+  "version": "0.9.20",
   "author": {
     "name": "Eibbor Srenduas",
     "email": "robbies@eibbors.net",
@@ -38,10 +38,10 @@
     "url": "https://github.com/vedmalex/mws-sdk.git"
   },
   "dependencies": {
-    "xml2js": "^0.4.12",
     "bluebird": "3.4.1",
+    "request": "^2.60.0",
     "underscore": "^1.8.3",
-    "request": "^2.60.0"
+    "xml2js": "^0.4.12"
   },
   "devDependencies": {
     "assert": "^1.3.0",
