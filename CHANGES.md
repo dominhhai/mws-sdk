@@ -1,5 +1,7 @@
 Changes:
 =======
+2017/10/13 ver. 0.9.20
+fixed #16 by [mattbarton](https://github.com/mattbarton)
 
 2017/10/13 ver. 0.9.18
 ----------------------
