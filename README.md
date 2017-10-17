@@ -9,16 +9,16 @@ What is done:
  - It is uses [request](https://www.npmjs.com/package/request). it is more flexible and there is no eventEmitter syntax.
 
  - Promises to provide generic async support.
- 
+
  - I've add some new requests from updated Amazone API.
- 
+
  - I fix it with better set params ability... so it now looks niceier!!!
 
 
 Use it. Contriburte it.
 
 it can be seamlesly used in ES2015/2016 way using [babel.js](https://babeljs.io/).
-with new javascript code features like `yield` or `async` `wait` to put some sugar on your code. 
+with new javascript code features like `yield` or `async` `wait` to put some sugar on your code.
 
 Examples
 --------
@@ -33,13 +33,18 @@ var MWS = require('mws-sdk-promises'),
       'merchantId',
       {
         // Optional Auth Token when using delegated Developer access.
-        authToken: 'amzn.mws...'
+        authToken: 'amzn.mws...',
+        // request options (https://github.com/request/request#requestoptions-callback)
+        requestOpts: {
+          proxy: 'http://PROXY_HOST:PROXY_PORT',
+          encoding: null
+        }
       }
     ),
     MarketplaceId = "ATVPDKIKX0DER";
 ```
 
-now you can use it 
+now you can use it
 
 ```javascript
 function getListOrders(client, args) {
