@@ -1,4 +1,10 @@
 Changes:
+
+=======
+2017/10/17 ver. 0.9.21
+merged with #17 by [dominhhai](https://github.com/dominhhai)
+add request option
+
 =======
 2017/10/13 ver. 0.9.20
 fixed #16 by [mattbarton](https://github.com/mattbarton)
