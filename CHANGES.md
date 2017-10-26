@@ -1,12 +1,17 @@
 Changes:
+========
 
-=======
-2017/10/17 ver. 0.9.21
+2017/10/26 ver. 0.9.21
+----------------------
+merged with PR #19 by [xeno](https://github.com/xeno)
+
+2017/10/26 ver. 0.9.21
+----------------------
 merged with #17 by [dominhhai](https://github.com/dominhhai)
 add request option
 
-=======
 2017/10/13 ver. 0.9.20
+----------------------
 fixed #16 by [mattbarton](https://github.com/mattbarton)
 
 2017/10/13 ver. 0.9.18
