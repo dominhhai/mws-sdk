@@ -1,7 +1,7 @@
 Changes:
 ========
 
-2017/10/26 ver. 0.9.21
+2017/10/26 ver. 0.9.22
 ----------------------
 merged with PR #19 by [xeno](https://github.com/xeno)
 
