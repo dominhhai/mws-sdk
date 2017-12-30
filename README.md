@@ -32,6 +32,8 @@ var MWS = require('mws-sdk-promises'),
       'secretAccessKey',
       'merchantId',
       {
+        // target mws host. Default: 'mws.amazonservices.com'
+        host: MWS.Endpoint.jp,
         // Optional Auth Token when using delegated Developer access.
         authToken: 'amzn.mws...',
         // request options (https://github.com/request/request#requestoptions-callback)
