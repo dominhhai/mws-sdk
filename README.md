@@ -16,13 +16,20 @@ What is done:
 
  - I fix it with better response format!!!
 
+
+Installation
+--------
+```
+$ npm i -S imws
+```
+
 Examples
 --------
 
 Initialize
 
 ```javascript
-var MWS = require('mws-sdk-promises'),
+var MWS = require('imws'),
     client = new MWS.Client(
       'accessKeyId',
       'secretAccessKey',
