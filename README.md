@@ -1,7 +1,7 @@
 imws
 ======
 
-Originally forked from [ticadia/mws-sdk](https://github.com/vedmalex/mws-sdk).
+Originally forked from [vedmalex/mws-sdk](https://github.com/vedmalex/mws-sdk).
 
 Why forked?
 -------------
@@ -9,7 +9,7 @@ The response object made by `xml2js` is
  - So looooooong
  - Un-clean `~~~~`
  - Hard to track ...00.aa444
- - Tired to access =>.=>.=>.=> 
+ - Tired to access =>.=>.=>.=>
 
 What is done:
 -------------
