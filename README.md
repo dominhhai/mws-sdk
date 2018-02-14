@@ -83,6 +83,8 @@ getListOrders(client, {
   CreatedAfter: new Date(2015, 1, 1),
   CreatedBefore: new Date(2015, 1, 31)
 })
+// convert to clean JS Object
+.then(MWS.Orders.responses.ListOrders)
 .catch(function(error) {
   console.error(error);
 })
