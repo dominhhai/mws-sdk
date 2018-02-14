@@ -1,24 +1,20 @@
-mws-sdk-promises
+imws
 ======
 
-Originally forked from [ticadia/mws-sdk](https://github.com/ticadia/mws-sdk).
+Originally forked from [ticadia/mws-sdk](https://github.com/vedmalex/mws-sdk).
+
+Why forked?
+-------------
+The response object made by `xml2js` is
+ - So looooooong
+ - Un-clean `~~~~`
+ - Hard to track ...00.aa444
+ - Tired to access =>.=>.=>.=> 
 
 What is done:
 -------------
 
- - It is uses [request](https://www.npmjs.com/package/request). it is more flexible and there is no eventEmitter syntax.
-
- - Promises to provide generic async support.
-
- - I've add some new requests from updated Amazone API.
-
- - I fix it with better set params ability... so it now looks niceier!!!
-
-
-Use it. Contriburte it.
-
-it can be seamlesly used in ES2015/2016 way using [babel.js](https://babeljs.io/).
-with new javascript code features like `yield` or `async` `wait` to put some sugar on your code.
+ - I fix it with better response format!!!
 
 Examples
 --------
